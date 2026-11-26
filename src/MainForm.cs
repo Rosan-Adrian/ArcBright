@@ -53,6 +53,7 @@ namespace ArcBright
         private readonly Button btnNormal = new Button();
         private readonly Button btnBright = new Button();
         private readonly Button btnBrighter = new Button();
+        private readonly Button btnCronos = new Button();
         private readonly Label lblColourNote = new Label();
         private readonly Label lblGame = new Label();
         private readonly TextBox txtTargets = new TextBox();
@@ -173,6 +174,7 @@ namespace ArcBright
             // Lower contrast keeps the bright parts from burning out while gamma lifts the shadows.
             AddPreset(presets, btnBright, 5, 90, 160, 120);
             AddPreset(presets, btnBrighter, 0, 85, 200, 130);
+            AddPreset(presets, btnCronos, 5, 85, 200, 150);
             root.Controls.Add(presets);
 
             var game = Flow();
@@ -350,6 +352,7 @@ namespace ArcBright
             btnNormal.Text = Lang.T("Normal", "Normal");
             btnBright.Text = Lang.T("Bright", "Luminos");
             btnBrighter.Text = Lang.T("Brighter", "Foarte luminos");
+            btnCronos.Text = "Cronos Bright";
             lblColourNote.Text = string.Format(Lang.T("Colour needs an AMD Radeon card ({0}).", "Culoarea merge doar pe plăci AMD Radeon ({0})."), engine.Amd.Error);
             lblGame.Text = Lang.T("Game:", "Joc:");
             if (pickTimer.Enabled)
