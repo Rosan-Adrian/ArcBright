@@ -171,7 +171,7 @@ namespace ArcBright
             presets.Controls.Add(lblPresets);
             AddPreset(presets, btnNormal, Settings.BrightnessDefault, Settings.ContrastDefault, Settings.GammaDefault, Settings.SaturationDefault);
             // Lower contrast keeps the bright parts from burning out while gamma lifts the shadows.
-            AddPreset(presets, btnBright, 0, 90, 160, 120);
+            AddPreset(presets, btnBright, 5, 90, 160, 120);
             AddPreset(presets, btnBrighter, 0, 85, 200, 130);
             root.Controls.Add(presets);
 

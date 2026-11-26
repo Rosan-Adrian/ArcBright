@@ -4,5 +4,5 @@ using System.Reflection;
 [assembly: AssemblyDescription("Brightness, contrast, gamma and colour for Arc Raiders, only while the game is in front")]
 [assembly: AssemblyProduct("ArcBright")]
 [assembly: AssemblyCopyright("MIT License, Rosan-Adrian")]
-[assembly: AssemblyVersion("1.0.2.0")]
-[assembly: AssemblyFileVersion("1.0.2.0")]
+[assembly: AssemblyVersion("1.0.3.0")]
+[assembly: AssemblyFileVersion("1.0.3.0")]
