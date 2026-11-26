@@ -61,7 +61,6 @@ namespace ArcBright
         private readonly Button btnUnlock = new Button();
         private readonly LinkLabel lnkLanguage = new LinkLabel();
         private readonly LinkLabel lnkRepo = new LinkLabel();
-        private readonly Label lblFooter = new Label();
         private readonly SliderRow rowBrightness, rowContrast, rowGamma, rowSaturation;
 
         private Native.WinEventProc winEventProc;
@@ -230,13 +229,6 @@ namespace ArcBright
             bottom.Controls.Add(lnkRepo);
             root.Controls.Add(bottom);
 
-            lblFooter.AutoSize = true;
-            lblFooter.Anchor = AnchorStyles.None;
-            lblFooter.ForeColor = Gray;
-            lblFooter.Font = new Font("Segoe UI", 8.5f, FontStyle.Italic);
-            lblFooter.Margin = new Padding(0, S(12), 0, 0);
-            root.Controls.Add(lblFooter);
-
             if (chkAutostart.Checked)
             {
                 SetAutostart(true); // keeps the path right if the EXE was moved
@@ -374,7 +366,6 @@ namespace ArcBright
             miShow.Text = Lang.T("Show ArcBright", "Arată ArcBright");
             miEnabled.Text = Lang.T("On", "Pornit");
             miExit.Text = Lang.T("Exit", "Ieșire");
-            lblFooter.Text = Lang.T("Cronos is a big gooner", "Cronos e un mare gooner");
 
             tips.SetToolTip(rowBrightness.Caption, Lang.T("Raises everything, black included.", "Ridică tot, inclusiv negrul."));
             tips.SetToolTip(rowContrast.Caption, Lang.T("Spreads dark and light apart.", "Depărtează întunericul de lumină."));
